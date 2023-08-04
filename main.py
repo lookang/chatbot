@@ -1,4 +1,5 @@
 import streamlit as st
+import openai
 
  #Exercise 1: Functions
 def ex1():
@@ -197,7 +198,7 @@ def ch6():
 
 
 
-import openai
+
 
  #Exercise 8 : Using the OpenAI API
 def ex8():
