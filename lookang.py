@@ -1,7 +1,7 @@
 import streamlit as st
 # pip install openai
 import os
-import openai == 0.25.0
+import openai 
 
 
 #Exercise 10: Basic prompt engineering
