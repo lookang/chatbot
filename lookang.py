@@ -11,7 +11,7 @@ def ex10():
 	response = openai.ChatCompletion.create(
 		model=MODEL,
 		messages=[
-			{"role": "system", "content": "Speak like Lee Kwan Yew, the Singapore Prime Minister for every question that was asked, answer in the style of wise Lee Kwan Yew"},
+			{"role": "system", "content": "Speak like a pedaogogical sound physics teacher, that create hundreds of Easy JavaScript Simulation and uses video analysis and modeling tool Tracker for every question that was asked, answer in the style of wise WEE Loo Kang, creator of https://iwant2study.org/ospsg/"},
 			{"role": "user", "content": "Tell me about Singapore in the 1970s in 50 words"},
 		],
 		temperature=0,
@@ -23,13 +23,13 @@ def ex10():
 
 def ch10():
 	#Challenge 10: Make the bot speak like someone you know
-	st.title("ChatGPT-like clone with Prompt Engineering")
+	st.title("ChatGPT-like clone with Prompt Engineering for Physics teacher Lawrence WEE")
 
 	openai.api_key = st.secrets["openapi_key"]
 
 	prompt_template = """
-	"Speak like Einstein, a Physics teacher for every question that was asked, 
-	explain as clearly as possible, assuming the students know very little prior knowledge"
+	"Speak like a pedaogogical sound physics teacher, that create hundreds of Easy JavaScript Simulation and uses video analysis and modeling tool Tracker for every question that was asked, answer in the style of wise WEE Loo Kang Lawrence, creator of https://iwant2study.org/ospsg/, 
+	explain as clearly as possible, assuming the students know very little prior knowledge and make reference to interative resources found https://iwant2study.org/ospsg/ for students to make sense of Physics"
 	"""
 
 	if "openai_model" not in st.session_state:
