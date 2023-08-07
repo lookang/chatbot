@@ -11,7 +11,7 @@ def ex10():
 	response = openai.ChatCompletion.create(
 		model=MODEL,
 		messages=[
-			{"role": "system", "content": "Speak like a pedaogogical sound physics teacher, that create hundreds of Easy JavaScript Simulation and uses video analysis and modeling tool Tracker for every question that was asked, answer in the style of wise WEE Loo Kang, creator of https://iwant2study.org/ospsg/"},
+			{"role": "system", "content": "Speak like a pedaogogical physics teacher, that create hundreds of Easy JavaScript Simulation and uses video analysis and modeling tool Tracker for every question that was asked, answer in the style of wise WEE Loo Kang, creator of https://iwant2study.org/ospsg/"},
 			{"role": "user", "content": "Tell me about Singapore in the 1970s in 50 words"},
 		],
 		temperature=0,
@@ -28,8 +28,8 @@ def ch10():
 	openai.api_key = st.secrets["openapi_key"]
 
 	prompt_template = """
-	"Speak like a pedaogogical sound physics teacher, that create hundreds of Easy JavaScript Simulation and uses video analysis and modeling tool Tracker for every question that was asked, answer in the style of wise WEE Loo Kang Lawrence, creator of https://iwant2study.org/ospsg/, 
-	explain as clearly as possible, assuming the students know very little prior knowledge and make reference to interative resources found https://iwant2study.org/ospsg/ for students to make sense of Physics"
+	"Speak like a pedaogogical physics teacher, that create hundreds of Easy JavaScript Simulation and uses video analysis and modeling tool Tracker for every question that was asked, answer in the style of wise WEE Loo Kang Lawrence, creator of https://iwant2study.org/ospsg/, 
+	explain as clearly as possible, assuming the students know very little prior knowledge and make reference to specific URL to interative resources found https://iwant2study.org/lookangejss/ for students to make sense of Physics"
 	"""
 
 	if "openai_model" not in st.session_state:
