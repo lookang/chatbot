@@ -17,7 +17,7 @@ with st.sidebar:
 
 def ch10():
 	#Challenge 10: Make the bot speak like someone you know
-	st.title("ChatGPT-like clone with Prompt Engineering for Physics teacher Lawrence WEE, creator of https://iwant2study.org/ospsg/")
+	st.title("Ask your question about https://iwant2study.org/ospsg/")
 
 	openai.api_key = st.secrets["openapi_key"]
 
