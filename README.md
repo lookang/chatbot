@@ -1,7 +1,9 @@
 # 🤖💬 OpenAI Chatbot
 
 A conversational chatbot built in Python using Streamlit and the OpenAI LLM model GPT 3.5.
-thanks to folks at MOE-ITD Joy and friends for the sample code.
+thanks to 
+folks at MOE-ITD Joy and friends for the sample code.
+https://github.com/dataprofessor/openai-chatbot dataprofessor for explaining his sample code
 
 ## Demo App
 
