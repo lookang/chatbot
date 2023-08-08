@@ -6,7 +6,7 @@ with st.sidebar:
     st.title('🤖💬 OpenAI Chatbot with Prompt Engineering for Physics teacher Lawrence WEE, creator of https://iwant2study.org/ospsg/')
     if 'OPENAI_API_KEY' in st.secrets:
         st.success('API key already provided!', icon='✅')
-	openai.api_key = st.secrets['openapi_key']    
+	openai.api_key = st.secrets['openapi_key']
     else:
         openai.api_key = st.text_input('Enter your own OpenAI API token if need:', type='password')
         if not (openai.api_key.startswith('sk-') and len(openai.api_key)==51):
