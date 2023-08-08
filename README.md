@@ -5,7 +5,7 @@ thanks to folks at MOE-ITD Joy and friends for the sample code.
 
 ## Demo App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://openai-chatbot.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://openai-chatbot.streamlit.app/](https://lookangphysics.streamlit.app/))
 
 ## Prerequisite libraries
 
