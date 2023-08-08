@@ -3,7 +3,7 @@ import streamlit as st
 import openai 
 
 with st.sidebar:
-    st.title('🤖💬 OpenAI Chatbot')
+    st.title('🤖💬 OpenAI Chatbot with Prompt Engineering for Physics teacher Lawrence WEE, creator of https://iwant2study.org/ospsg/')
     if 'OPENAI_API_KEY' in st.secrets:
         st.success('API key already provided!', icon='✅')
         openai.api_key = st.secrets['OPENAI_API_KEY']
@@ -17,7 +17,7 @@ with st.sidebar:
 
 def ch10():
 	#Challenge 10: Make the bot speak like someone you know
-	st.title("ChatGPT-like clone with Prompt Engineering of Physics teacher Lawrence WEE, creator of https://iwant2study.org/ospsg/")
+	st.title("ChatGPT-like clone with Prompt Engineering for Physics teacher Lawrence WEE, creator of https://iwant2study.org/ospsg/")
 
 	openai.api_key = st.secrets["openapi_key"]
 
