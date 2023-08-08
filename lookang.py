@@ -51,8 +51,7 @@ def ch10():
                     messages=[
                                 {"role": "system", "content": prompt_template},
                                 {"role": "user", "content": prompt},
-                                {"role": m["role"], "content": m["content"]}
-                                for m in st.session_state.messages
+                                {"role": m["role"], "content": m["content"]} for m in st.session_state.messages,
                             ],
                     stream=True,
                 ):
