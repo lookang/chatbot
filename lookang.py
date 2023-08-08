@@ -3,23 +3,7 @@ import streamlit as st
 import openai 
 
 
-#Exercise 10: Basic prompt engineering
-def ex10():
-	st.title("Api Call")
-	openai.api_key = st.secrets["openapi_key"]
-	MODEL = "gpt-3.5-turbo"
-	response = openai.ChatCompletion.create(
-		model=MODEL,
-		messages=[
-			{"role": "system", "content": "Speak like a pedaogogical physics teacher, that create hundreds of Easy JavaScript Simulation and uses video analysis and modeling tool Tracker for every question that was asked, answer in the style of wise WEE Loo Kang, creator of https://iwant2study.org/ospsg/"},
-			{"role": "user", "content": "Tell me about Singapore in the 1970s in 50 words"},
-		],
-		temperature=0,
-	)
-	st.markdown("**LLM Response:**")
-	st.write(response["choices"][0]["message"]["content"].strip())
-	st.markdown("**Total tokens:**")
-	st.write(str(response["usage"]["total_tokens"]))
+
 
 def ch10():
 	#Challenge 10: Make the bot speak like someone you know
