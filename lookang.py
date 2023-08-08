@@ -6,7 +6,7 @@ with st.sidebar:
     st.title('🤖💬 OpenAI Chatbot with Prompt Engineering for Physics teacher Lawrence WEE, creator of https://iwant2study.org/ospsg/')
     if 'OPENAI_API_KEY' in st.secrets:
         st.success('API key already provided!', icon='✅')
-	openai.api_key = st.secrets['openapi_key']
+        openai.api_key = st.secrets['openapi_key']
     else:
         openai.api_key = st.text_input('Enter your own OpenAI API token if need:', type='password')
         if not (openai.api_key.startswith('sk-') and len(openai.api_key)==51):
@@ -16,51 +16,51 @@ with st.sidebar:
 
 
 def ch10():
-	#Challenge 10: Make the bot speak like someone you know
-	st.title("Ask your question about https://iwant2study.org/ospsg/")
+    #Challenge 10: Make the bot speak like someone you know
+    st.title("Ask your question about https://iwant2study.org/ospsg/")
 
-	openai.api_key = st.secrets["openapi_key"]
+    openai.api_key = st.secrets["openapi_key"]
 
-	prompt_template = """
-	"Speak like a learning by doing physics teacher who creates hundreds of Easy JavaScript Simulations and uses the video analysis and modeling tool Tracker for educational question that is asked. Answer in the style of wise WEE Loo Kang Lawrence, the creator of https://iwant2study.org/ospsg/. 
-	Explain as clearly as possible, assuming the students know very little prior knowledge. Make reference to actual and specific URLs that work to interactive resources found at https://iwant2study.org/ospsg/index.php/sitemap to help students make sense of Physics."
-	"""
+    prompt_template = """
+    "Speak like a learning by doing physics teacher who creates hundreds of Easy JavaScript Simulations and uses the video analysis and modeling tool Tracker for educational question that is asked. Answer in the style of wise WEE Loo Kang Lawrence, the creator of https://iwant2study.org/ospsg/. 
+    Explain as clearly as possible, assuming the students know very little prior knowledge. Make reference to actual and specific URLs that work to interactive resources found at https://iwant2study.org/ospsg/index.php/sitemap to help students make sense of Physics."
+    """
 
-	if "openai_model" not in st.session_state:
-		st.session_state["openai_model"] = "gpt-3.5-turbo"
+    if "openai_model" not in st.session_state:
+        st.session_state["openai_model"] = "gpt-3.5-turbo"
 
-	if "msg_bot" not in st.session_state:
-		st.session_state.msg_bot = []
+    if "msg_bot" not in st.session_state:
+        st.session_state.msg_bot = []
 
-	for message in st.session_state.msg_bot:
-		with st.chat_message(message["role"]):
-			st.markdown(message["content"])
+    for message in st.session_state.msg_bot:
+        with st.chat_message(message["role"]):
+            st.markdown(message["content"])
 
-	try:
+    try:
 
-		if prompt := st.chat_input("What is up?"):
-			st.session_state.msg_bot.append({"role": "user", "content": prompt})
-			with st.chat_message("user"):
-				st.markdown(prompt)
+        if prompt := st.chat_input("What is up?"):
+            st.session_state.msg_bot.append({"role": "user", "content": prompt})
+            with st.chat_message("user"):
+                st.markdown(prompt)
 
-			with st.chat_message("assistant"):
-				message_placeholder = st.empty()
-				full_response = ""
-				for response in openai.ChatCompletion.create(
-					model=st.session_state["openai_model"],
-					messages=[
-								{"role": "system", "content": prompt_template},
-								{"role": "user", "content": prompt},
-							],
-					stream=True,
-				):
-					full_response += response.choices[0].delta.get("content", "")
-					message_placeholder.markdown(full_response + "▌")
-				message_placeholder.markdown(full_response)
-			st.session_state.msg_bot.append({"role": "assistant", "content": full_response})
+            with st.chat_message("assistant"):
+                message_placeholder = st.empty()
+                full_response = ""
+                for response in openai.ChatCompletion.create(
+                    model=st.session_state["openai_model"],
+                    messages=[
+                                {"role": "system", "content": prompt_template},
+                                {"role": "user", "content": prompt},
+                            ],
+                    stream=True,
+                ):
+                    full_response += response.choices[0].delta.get("content", "")
+                    message_placeholder.markdown(full_response + "▌")
+                message_placeholder.markdown(full_response)
+            st.session_state.msg_bot.append({"role": "assistant", "content": full_response})
 
-	except Exception as e:
-		st.error(e)
+    except Exception as e:
+        st.error(e)
 
    
 def main():
