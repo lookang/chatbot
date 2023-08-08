@@ -2,7 +2,8 @@ import streamlit as st
 # pip install openai
 import openai 
 
-
+with st.sidebar:
+    st.title('🤖💬 OpenAI Chatbot')
 
 
 def ch10():
