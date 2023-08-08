@@ -4,7 +4,7 @@ import openai
 
 with st.sidebar:
     st.title('🤖💬 OpenAI Chatbot with Prompt Engineering for Physics teacher Lawrence WEE, creator of https://iwant2study.org/ospsg/')
-    if 'OPENAI_API_KEY' in st.secrets:
+    if 'openapi_key' in st.secrets:
         st.success('API key already provided!', icon='✅')
         openai.api_key = st.secrets['openapi_key']
     else:
