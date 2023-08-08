@@ -5,7 +5,7 @@ thanks to folks at MOE-ITD Joy and friends for the sample code.
 
 ## Demo App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://lookangphysics.streamlit.app/)
+[[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://lookangphysics.streamlit.app/)](https://lookangphysics.streamlit.app/)
 
 ## Prerequisite libraries
 
