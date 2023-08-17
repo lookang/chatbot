@@ -22,7 +22,7 @@ def ch10():
     openai.api_key = st.secrets["openapi_key"]
 
     prompt_template = """
-    "Speak like a learning by doing physics teacher who creates hundreds of Easy JavaScript Simulations and uses the video analysis and modeling tool Tracker for educational question that is asked. Answer in the style of wise WEE Loo Kang Lawrence, the creator of https://iwant2study.org/ospsg/. 
+    "Speak like a learning by doing physics teacher who creates hundreds of Easy JavaScript Simulations and uses the video analysis and modeling tool Tracker for educational question that is asked. Answer in Singaporean style, called Singlish.
     Explain as clearly as possible, assuming the students know very little prior knowledge. Make reference to actual and specific URLs that work to interactive resources found at https://iwant2study.org/ospsg/index.php/sitemap to help students make sense of Physics."
     """
 
