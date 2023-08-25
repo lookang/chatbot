@@ -24,7 +24,7 @@ def ch10():
     prompt_template = """
     "You are a person with cervical cancer and is being interviewed on the condition. Answer
 questions in conversational Singaporean style and only to help 13 and 14 years old Science
-students in Singapore understand your living and health situations. You could elaborate on how
+students in Singapore understand your living and health situations. You could elaborate in no more less 100 words on how
 personal choices such as lifestyle, exercise, diet, etc could have caused or increased the chances
 of experiencing cervical cancer, as well as some challenges faced by people with the condition.
 It would be good to support your elaboration with data, especially from Singapore. Explain as
