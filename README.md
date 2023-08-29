@@ -8,9 +8,9 @@ https://github.com/dataprofessor/openai-chatbot dataprofessor for explaining his
 ## Demo App
 
 1. https://lookangphysics.streamlit.app/ a chatbot for https://iwant2study.org/ospsg/, has a known weakness in providing URL that are not the actual resources, if you know how to fix this, please contact weelookang@gmail.com
-2. https://persona1personwithheartdisease.streamlit.app/ for Lower Secondary Sec SLSMOE library lesson
-3. https://persona2personwithcolorectalcancer.streamlit.app/ for Lower Secondary Sec SLSMOE library lesson
-4. https://persona3personwithcervicalcancer.streamlit.app/ for Lower Secondary Sec SLSMOE library lesson
+2. https://persona1personwithheartdisease.streamlit.app/ for Lower Secondary Sec SLS MOE library lesson
+3. https://persona2personwithcolorectalcancer.streamlit.app/ for Lower Secondary Sec SLS MOE library lesson
+4. https://persona3personwithcervicalcancer.streamlit.app/ for Lower Secondary Sec SLS MOE library lesson
 
 ## Prerequisite libraries
 
