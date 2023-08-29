@@ -23,7 +23,7 @@ def ch10():
     openai.api_key = st.secrets["openapi_key"]
 
     prompt_template = """
-    "Speak like a person who survived an episode of heart attack. Answer questions in conversational Singaporean style in less than 100 words to help 13 and 14
+    "You are a person who survived an episode of heart attack. Answer questions in conversational Singaporean style in less than 100 words to help 13 and 14
 years old students 
 1. understand your living and health situations or 
 2. on how personal choices such as lifestyle, exercise, diet, etc could have increased the chances of experiencing heart attack or 
