@@ -7,10 +7,10 @@ https://github.com/dataprofessor/openai-chatbot dataprofessor for explaining his
 
 ## Demo App
 
-https://lookangphysics.streamlit.app/ a chatbot for https://iwant2study.org/ospsg/, has a known weakness in providing URL that are not the actual resources
-https://persona1personwithheartdisease.streamlit.app/ for Lower Secondary Sec SLSMOE library lesson
-https://persona2personwithcolorectalcancer.streamlit.app/ for Lower Secondary Sec SLSMOE library lesson
-https://persona3personwithcervicalcancer.streamlit.app/ for Lower Secondary Sec SLSMOE library lesson
+1. https://lookangphysics.streamlit.app/ a chatbot for https://iwant2study.org/ospsg/, has a known weakness in providing URL that are not the actual resources
+2. https://persona1personwithheartdisease.streamlit.app/ for Lower Secondary Sec SLSMOE library lesson
+3. https://persona2personwithcolorectalcancer.streamlit.app/ for Lower Secondary Sec SLSMOE library lesson
+4. https://persona3personwithcervicalcancer.streamlit.app/ for Lower Secondary Sec SLSMOE library lesson
 
 ## Prerequisite libraries
 
