@@ -17,7 +17,7 @@ with st.sidebar:
 
 def ch10():
     #Challenge 10: Make the bot speak like someone you know
-    st.title("Persona 1: Person with heart disease")
+    st.title("person who suffered from heart attack")
 
     openai.api_key = st.secrets["openapi_key"]
 
