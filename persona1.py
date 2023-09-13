@@ -48,7 +48,7 @@ know or are unsure of any information, just say you do not know. Do not make up 
 
     try:
 
-        if prompt := st.chat_input("What is up?"):
+        if prompt := st.chat_input("Ask about heart attack related question."):
             st.session_state.msg_bot.append({"role": "user", "content": prompt})
             with st.chat_message("user"):
                 st.markdown(prompt)
