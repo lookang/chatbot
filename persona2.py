@@ -51,7 +51,7 @@ information, just say you do not know. Do not make up information."
 
     try:
 
-        if prompt := st.chat_input("What is up?"):
+        if prompt := st.chat_input("Ask colorectal cancer related question"):
             st.session_state.msg_bot.append({"role": "user", "content": prompt})
             with st.chat_message("user"):
                 st.markdown(prompt)
