@@ -4,7 +4,7 @@ import streamlit as st
 import openai 
 
 with st.sidebar:
-    st.title('🤖💬 OpenAI Chatbot with Prompt Engineering for SLS lesson')
+    st.title('🤖💬 OpenAI Chatbot with Prompt Engineering for master class Mr. Yap BC')
     if 'openapi_key' in st.secrets:
         st.success('API key already provided!', icon='✅')
         openai.api_key = st.secrets['openapi_key']
